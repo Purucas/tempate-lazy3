@@ -1,0 +1,27 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content padding center>
+  <figure>
+  <ion-img width="100" height="100" src="../assets/imgs/logo.png"></ion-img>
+  </figure>
+  <h3>Bem-vindo</h3>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+  <button ion-button full (click)="irParaNoticias()" >Entrar</button>
+
+  <button margin-top ion-button full outline (click)="irParaCadastro()" >Cadastre-se</button>
+</ion-content>

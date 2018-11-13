@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Notícias</ion-title>
+    <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngFor="let n of noticias" (click)="detalheNoticia(n.id)">
+    <figure text-center>
+    <img src="{{n.img}}"/>
+    </figure>
+    <ion-card-content>
+      <ion-card-title>
+        {{n.titulo}}
+        </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
